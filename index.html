@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title> Menu Design </title>
+    </head>
+    <style>
+        nav{
+            text-align: center;
+            border-bottom: 1px solid gray;
+            padding: 25px 0;
+        }
+        nav ul li{
+            display: inline-block;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: black;
+            font-weight: 700;
+            padding: 0 15px;
+            transition: 0.3s;
+        }
+
+        nav ul li:hover > a {
+            color: orangered;
+        }
+        nav ul li .submenu {
+            position: absolute;
+            width: 200px;
+            text-align: left;
+            border: 1px solid #aaa;
+            border-top: 2px solid #f00;
+            background-color: white;
+            margin-top: 80px;
+            opacity: 0;
+            visibility:hidden;
+            transition: 0.45s;
+        }
+        nav ul li:hover > .submenu {
+            opacity: 1;
+            visibility: visible;
+            margin-top: 0;
+
+        }
+
+        
+
+        nav ul li .submenu li{
+            display:block;
+            
+            
+        }
+        nav ul li .submenu li .submenu{
+            left: 100%;
+            top: 0;
+        }
+        nav ul li .submenu li a {
+            display: block;
+            padding: 15px ;
+            border-bottom: 1px solid #aaa;
+
+        }
+        nav ul li .submenu li:hover a {
+            padding-left: 30px;
+
+        }
+
+    </style>
+    <body>
+        <img src="file:///C:/Users/User/Documents/image/images.%20jpeg/Dazzel.png">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">PHONES</a>
+
+                    <ul class="submenu">
+
+                        <li>
+                            <a href="#">iPhone</a>
+                            <ul class="submenu">
+                               
+                                <li><a href="#">Apple iPhone 11</a></li>
+                                <li><a href="#">Apple iPhone 12</a></li>
+                                <li><a href="#">Apple iPhone 13</a></li>  
+                                <li><a href="#">Apple iPhone 14</a></li>
+                                <li><a href="#">Apple iPhone 15</a></li>
+                                <li>
+                                    <a href="#">Apple iPhone 16</a>
+                                    <ul class="submenu">
+                                        <li><a href="#"> Apple iPhone 16 Pro Max</a></li>
+                                        <li><a href="#"> Apple iPhone16 </a></li>
+                                        <li><a href="#">Apple iPhone16 Pro </a></li>
+                                        <li><a href="#">Apple iPhone16 Plus </a></li>
+                                        
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Samsung</a></li>
+                        <li><a href="#">Google</a> </li>
+                        <li><a href="#">Xiaomi</a></li>
+                        <li><a href="#">oppo</a></li>
+                        <li><a href="#">Vivo</a></li>
+                        <li><a href="#">OnePlus</a></li>
+                        <li><a href="#">Realme</a></li>
+                        <li><a href="#">Nokia</a></li>
+                        <li><a href="#">Sony</a></li>
+                        <li><a href="#">Huawei</a></li>
+                        <li><a href="#"> Tecno </a></li>
+                        <li><a href="#"> Poco</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">TABLETS</a>
+                    <ul class="submenu">
+                        <li><a href="#"> Samsung Galaxy  Tab S9 5G </a></li>
+                        <li><a href="#"> Google Pixel Tablet</a></li>
+                        <li><a href="#">One Plus Pad</a></li>
+                        <li><a href="#"> Xiaomi Poco Pad</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">LAPTOP</a>
+                    <ul class="submenu">
+                        <li><a href="#">Acer</a></li>
+                        <li><a href="#">Lenova</a></li>
+                        <li><a href="#">Dell</a></li>
+                        <li><a href="#">Apple</a></li>
+                        <li><a href="#">Hp</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">SMART WATCH </a>
+                    <ul class="submenu">
+                        <li><a href="#">Apple watch</a></li>
+                        <li><a href="#">FitBit</a></li>
+                        <li><a href="#">Germin</a></li>
+                        <li><a href="#">Fossil</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">GADETS</a>
+                    <ul class="submenu">
+                        <li><a href="#">AirPods</a></li>
+                        <li><a href="#">Smart Watches</a></li>
+                        <li><a href="#">Bluetooth Headphones</a></li>
+                        <li><a href="#">VR Headsets</a></li>
+                    </ul>
+                </li>
+                <li> 
+                    <a href="#">ACCESSORIES</a>
+                    <ul class="submenu">
+                        <li><a class="#">Adapters</a></li>
+                        <li><a href="#"> Cables</a></li>
+                        <li><a href="#">Chargers</a></li>
+                        <li><a href="#">Power Bank</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">SOUNDS</a>
+                    <ul class="submenu">
+                        <li><a href="#">Bluetooth Speakers</a></li>
+                        <li><a href="#">Portable Speakers</a></li> 
+                        <li><a href="#">Smart Speakers</a></li>
+                        <li><a href="#"> Amplifier</a></li>
+                        
+                        
+                    </ul>
+
+                </li>
+                <li>
+                    <a href="#"> SMART TV </a>
+                    <ul class="submenu">
+                        <li><a href="#">Sony</a></li>
+                        <li><a href="#">Xiaomi</a></li>
+                        <li><a href="#">Samsung</a></li>
+                        <li><a href="#">Walton</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </nav>
+
+    </body>
+
+</html>
